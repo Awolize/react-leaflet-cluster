@@ -2,25 +2,25 @@
   "name": "react-leaflet-cluster",
   "version": "2.1.0",
   "description": "React-leaflet-cluster is a plugin for react-leaflet. A wrapper component of Leaflet.markercluster.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "css",
     "es",
-    "lib",
+    "dist",
     "umd"
   ],
   "scripts": {
     "tsup": "tsup src/index.tsx",
     "build": "tsc && npm run minify && npm run copy:assets",
-    "minify": "uglifyjs --compress --mangle --output lib/index.min.js -- lib/index.js",
+    "minify": "uglifyjs --compress --mangle --output dist/index.min.js -- dist/index.js",
     "format": "prettier --write \"src/**/*.tsx\"",
     "lint": "tslint -p tsconfig.json",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "copy:assets": "cpx 'src/assets/**' 'lib/assets'"
+    "copy:assets": "cpx 'src/assets/**' 'dist/assets'"
   },
   "dependencies": {
     "@react-leaflet/core": "^2.1.0",
