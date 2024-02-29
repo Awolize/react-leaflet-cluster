@@ -58,7 +58,7 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 var import_core = require("@react-leaflet/core");
-var import_leaflet = __toESM(require("leaflet"));
+var import_leaflet = __toESM(require("leaflet"), 1);
 var import_leaflet2 = require("leaflet.markercluster");
 delete import_leaflet.default.Icon.Default.prototype._getIconUrl;
 import_leaflet.default.Icon.Default.mergeOptions({

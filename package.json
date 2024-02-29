@@ -10,6 +10,7 @@
     "dist",
     "umd"
   ],
+  "type": "module",
   "scripts": {
     "tsup": "tsup src/index.tsx",
     "build": "tsc && npm run minify && npm run copy:assets",
