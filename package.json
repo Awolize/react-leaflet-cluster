@@ -2,8 +2,7 @@
   "name": "react-leaflet-cluster",
   "version": "2.1.0",
   "description": "React-leaflet-cluster is a plugin for react-leaflet. A wrapper component of Leaflet.markercluster.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.cjs",
   "files": [
     "css",
     "es",
